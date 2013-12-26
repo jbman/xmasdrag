@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    padding: 10px;
 }
 
 ::-moz-selection {
@@ -60,16 +61,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 .img-tree {
   position: relative;
-  margin: 10px;
+  float: left;
+  width: 500px;
+  margin-right: -500px;
+  height: 540px;
 }
 
 .photos {
   position: relative;
-  margin: 10px;
-  left: 500px;
+  float: left;
+  margin-left: 500px;  
+  width: 100% - 40px;
   display: table;
+  table-layout: fixed;
 }
 
 .photo-row {
@@ -78,28 +85,26 @@ textarea {
 
 .text {
   display: table-cell;
-  padding: 20px;
   vertical-align: middle;
+  min-width: 120px;
+  max-width: 200px;
+  font-size: 1.4vw;
 }
-
-  .help {
-
-  }
 
   [class*="message"] {
     display: none;
+    padding: 10px;
   }
 
 .photo {
   display: table-cell;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
 }
 
   .photo img {
     opacity: 0.5;
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    min-width: 120px;
   }
 
   .photo.pep-dpa img { 
@@ -113,7 +118,6 @@ textarea {
 .circle {
     width: 120px;
     height: 120px;
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -143,3 +147,9 @@ textarea {
 .circle-10 { top: 315px; left: 360px; }
 .circle-11 { top: 420px; left: 180px; }
 
+.footer {
+  clear:both;
+  padding: 10px 0 10px 0;
+  font-size: 0.8em;
+  color: gray;
+}
